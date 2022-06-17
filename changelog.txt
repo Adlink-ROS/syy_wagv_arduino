@@ -1,0 +1,91 @@
+ v0.12                                                             1080408
+ - Cancel TX flush for BMS
+ - Add ros_comm library
+ - Abandon rosserial
+ - Fully ROS-lize
+ - Stable version
+============================================================================
+v0.11                                                             1080328
+ - ROS serialize
+ 
+============================================================================
+v0.10                                                             1080327
+ - Add LEDs 
+ 
+============================================================================
+v0.9                                                              1080325
+ - Commonlize communication utilities
+ - Add free motor function via seiral
+ - Add free motor via pushbuttono (untested)(1080326 tested)
+ - Add bumper motor kill (untested)(1080326 tested)
+ - Swinging for serial print to save time (~3ms)
+ - Power reboot of IMU
+ - TODO: re-sync mechanism if CRC failed
+ 
+============================================================================
+v0.8                                                              1080322
+ - Add IMU with DMP
+ - Clean up modbus comm
+ - Speed-up motor init()
+ - Decode position at motor init
+ - Add liveliness to Vehicle, Wheel, and IMU
+ - Fix IMU long delay bug (still takes ~2ms to comm now)
+ - Modify IMU library to pool clear FIFO buffer
+ - Fix BMS comm state machine
+ - TODO: use comm error code library to pass status
+ - TODO(opt): My own Serial print buffer
+
+============================================================================
+v0.7                                                              1080319
+ - Add BMS monitor
+
+============================================================================
+v0.6                                                              1080318
+ - Full Vehicle class
+ - Vehicle control
+ - Control target low pass filter
+ - Odometry calculation
+ - Add date to version in log
+ - Add reset & initial function to wheel
+ - Fix start at non-zero odometry
+ - Fix non-global variable causing random vel_cmd
+
+============================================================================
+v0.5                                                              1080315
+ - Modulize CRC
+ - Non-blocking tx (asynchronous comm complete)
+ - Fix velocity command calculation
+ - Fix wheel encoder step calculation
+ - Add micro-step serial velocity command
+
+============================================================================
+v0.4                                                              1080313
+ - Metric motor velocity command and feedback
+ - Non-blocking rx
+ - All directional movement via keyboard and serial
+ 
+============================================================================
+v0.3                                                              1080312
+ - Show proper encoder step
+ - Wheel library
+ - Implement velocity calculation and control
+ - Vehicle movement by keyboard
+ 
+============================================================================
+v0.2 (syy_wagv_v0_2.ino)                                           1080311
+ - Take in Serial 'w' or 's' and move forward /backward at 30 rpm
+ - Decode motor position and step 
+ - Print motor position and stop through Serial
+ - Check Modbus rtu echo CRC16
+ - First creation of changelog.txt
+
+============================================================================ 
+v0.1 (syy_wagv_v0_1.ino)                                           1080311
+ - Modbus communication library: modbus_comm.h
+ - Take in Serial 'w' or 's' and move forward /backward at 30 rpm
+ - Print time out errors
+
+============================================================================
+v0.0(sketch_mar06a)                                                1080307
+ - Forward and backward movement with speed of 20rpm
+ - Print everything to Serial
